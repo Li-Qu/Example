@@ -9,13 +9,20 @@ package example;
  *
  * @author 20002116
  */
-public class Example {
+public class EmployeeManagerProgram {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Manager emp1 = new Manager("Bob", 123);
+        //System.out.println(emp1.printDetails());
+        
+        Employee emp2 = new Employee("Charlie", 234);
+        Employee emp3 = new Employee("Bell", 345);
+        emp1.addEmployee(emp2);
+        emp1.addEmployee(emp3);
+        System.out.println(emp1.printDetails());
     }
     
 }
